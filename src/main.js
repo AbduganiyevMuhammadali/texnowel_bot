@@ -9,7 +9,9 @@ import YmapPlugin from "vue-yandex-maps"
 
 let MIDDLEWARE_URL = 'http://82.148.6.172:3012/api/v1/'
 let VITE_BASE_URL = 'http://82.148.6.172:3012/api/v1/'
+
 Axios.defaults.baseURL = VITE_BASE_URL
+
 Axios.defaults.timeout = 20000
 
 const app = createApp(Provider)
