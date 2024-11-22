@@ -8,7 +8,7 @@ import VueEasyLightbox from 'vue-easy-lightbox'
 import YmapPlugin from "vue-yandex-maps"
 
 let MIDDLEWARE_URL = import.meta.env.VITE_MIDDLEWARE_URL
-let VITE_BASE_URL = import.meta.env.VITE_BASE_URL
+let VITE_BASE_URL = 'http://82.148.6.172:3012/'
 Axios.defaults.baseURL = VITE_BASE_URL
 Axios.defaults.timeout = 20000
 
