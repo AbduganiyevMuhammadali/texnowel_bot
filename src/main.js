@@ -5,6 +5,7 @@ import Provider from './components/Provider.vue'
 import router from './router'
 import Axios from 'axios'
 import VueEasyLightbox from 'vue-easy-lightbox'
+
 import YmapPlugin from "vue-yandex-maps"
 
 let MIDDLEWARE_URL = 'http://82.148.6.172:3012/api/v1/'
