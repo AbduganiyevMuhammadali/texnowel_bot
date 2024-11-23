@@ -7,8 +7,8 @@ import Axios from 'axios'
 import VueEasyLightbox from 'vue-easy-lightbox'
 import YmapPlugin from "vue-yandex-maps"
 
-let MIDDLEWARE_URL = 'http://82.148.6.172:3012/api/v1/'
-let VITE_BASE_URL = 'http://82.148.6.172:3012/api/v1/'
+let MIDDLEWARE_URL = 'https://middleware.bdm.uz/'
+let VITE_BASE_URL = 'https://aa0663-api.akhmad.uz/'
 Axios.defaults.baseURL = VITE_BASE_URL
 Axios.defaults.timeout = 20000
 
