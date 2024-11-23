@@ -5,11 +5,13 @@ import Provider from './components/Provider.vue'
 import router from './router'
 import Axios from 'axios'
 import VueEasyLightbox from 'vue-easy-lightbox'
+
 import YmapPlugin from "vue-yandex-maps"
 
 // let MIDDLEWARE_URL = 'https://middleware.bdm.uz/'
 let VITE_BASE_URL = 'https://aa0663-api.akhmad.uz/api/v1/'
 Axios.defaults.baseURL = VITE_BASE_URL
+
 Axios.defaults.timeout = 20000
 
 const app = createApp(Provider)
