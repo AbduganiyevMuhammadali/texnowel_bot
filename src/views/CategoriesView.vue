@@ -385,6 +385,8 @@ const indexRef = ref(0)
     border-radius: 10px;
     padding: 10px;
     position: relative;
+    height: 240px;
+    max-height: 240px;
  }
  .card-item__button{
     display: flex;
@@ -401,8 +403,14 @@ const indexRef = ref(0)
  .card-item__img{
     width: 100%;
     display: flex;
+    max-height: 90px;
     align-items: center;
     justify-content: center;
+ }
+
+ .card-item__img img{
+    max-width: 70px;
+    height: 90px;
  }
 
 .modal-card{

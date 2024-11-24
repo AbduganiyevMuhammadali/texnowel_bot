@@ -10,6 +10,7 @@ import YmapPlugin from "vue-yandex-maps"
 
 // let MIDDLEWARE_URL = 'https://middleware.bdm.uz/'
 let VITE_BASE_URL = 'https://aa0663-api.akhmad.uz/api/v1/'
+// let VITE_BASE_URL = 'http://localhost:8080/api/v1/'
 Axios.defaults.baseURL = VITE_BASE_URL
 
 Axios.defaults.timeout = 20000
