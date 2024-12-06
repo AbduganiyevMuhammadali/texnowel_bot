@@ -387,6 +387,8 @@ const indexRef = ref(0)
     position: relative;
     height: 240px;
     max-height: 240px;
+    max-width: 165px;
+    min-width: 165px;
  }
  .card-item__button{
     display: flex;
