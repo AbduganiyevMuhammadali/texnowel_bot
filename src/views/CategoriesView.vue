@@ -21,14 +21,14 @@ const getAllPaytypes = () => {
     //     body: {}
     // }
 
-    axios.get('pay-type',).then((res) => {
+    axios.get('pay-type').then((res) => {
         currencies.value = res;
     })
 }
 
 
 const getAll = (parent_id) => {
-    if(!parent_id) return
+    // if(!parent_id) return
     // const body = {
     //     url: 'product/all-price-balance-not-zero/' + parent_id,
     //     params: {},
@@ -54,7 +54,6 @@ const getAll = (parent_id) => {
 
     axios.post('product/all-price-balance-not-zero/' + parent_id, data).then((res) => {
         categories.value = res;
-        console.log(res);
     })
 }
 
@@ -231,7 +230,7 @@ const indexRef = ref(0)
 
             <div class="card" >
                 <div v-for="item in categories">
-                <div class="card-item" v-if="item.is_product == 0" >
+                <div class="card-item" v-if="!item.is_product" >
                         <div class="card-item__img">
                             <img  v-if="item.is_folder == 0" @click="info(item)" 
                             :src="imgUrl+item.picture_name"
@@ -257,7 +256,7 @@ const indexRef = ref(0)
                             </span>
                         </p>
                         <p v-if="item.is_folder == 0" >
-                            <span v-if="item.is_price == 0" >
+                            <span v-if="!item.is_price" >
                                 {{ new Intl.NumberFormat('ru-RU').format(item.price_register.chakana_dollar_price) }} $
                             </span>
                             <span v-else style="color: red" >
